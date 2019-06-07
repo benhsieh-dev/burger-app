@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './NavigationItems.css';
+import navigationItemsModule from './NavigationItems.module.css';
 import NavigationItem from './NavigationItem/NavigationItem'; 
 
 const navigationItems = () => (
-    <ul className='NavigationItems'>
+    <ul className={navigationItemsModule.NavigationItems}>
        <NavigationItem link="/" active>Burger Builder</NavigationItem>
        <NavigationItem link="/">Checkout</NavigationItem>
     </ul>
